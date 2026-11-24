@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<mavlink>
+  <version>2</version>
+  <dialect>0</dialect>
+  <enums>
+    <enum name="FTS_STATE">
+      <description>Operating state of FTS Air.</description>
+      <entry value="0" name="FTS_STATE_SAFE">
+        <description>FTS Air is in the safe state.</description>
+      </entry>
+      <entry value="1" name="FTS_STATE_ARMED">
+        <description>FTS Air is armed.</description>
+      </entry>
+      <entry value="2" name="FTS_STATE_TERMINATED">
+        <description>FTS Air has terminated the vehicle.</description>
+      </entry>
+    </enum>
+    <enum name="FTS_GROUND_LINK">
+      <description>State of the LoRa ground link as observed by FTS Air.</description>
+      <entry value="0" name="FTS_GROUND_LINK_UNKNOWN">
+        <description>The state of the ground link is unknown.</description>
+      </entry>
+      <entry value="1" name="FTS_GROUND_LINK_ONLINE">
+        <description>The ground link is online.</description>
+      </entry>
+      <entry value="2" name="FTS_GROUND_LINK_DEGRADED">
+        <description>The ground link is degraded.</description>
+      </entry>
+      <entry value="3" name="FTS_GROUND_LINK_LOST">
+        <description>The ground link is lost.</description>
+      </entry>
+    </enum>
+  </enums>
+  <messages>
+    <message id="52610" name="FTS_STATUS">
+      <description>Status reported by FTS Air.</description>
+      <field type="uint32_t" name="time_boot_ms" units="ms">Time since FTS Air boot. A discontinuity can be used to detect an FTS Air restart.</field>
+      <field type="uint8_t" name="fts_state" enum="FTS_STATE">Current operating state of FTS Air.</field>
+      <field type="uint8_t" name="ground_link" enum="FTS_GROUND_LINK">State of the LoRa ground link as observed by FTS Air.</field>
+    </message>
+  </messages>
+</mavlink>

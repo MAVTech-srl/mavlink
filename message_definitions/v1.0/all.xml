@@ -65,9 +65,14 @@
     messages: 52100 - 52499
     commands: 52100 - 52499
   -->
+  <!-- fts.xml range of IDs:
+    messages: 52610 - 52619
+    commands: 52610 - 52619
+  -->
+  <include>fts.xml</include>
   <!--Next range to allocate range of IDs:
-    messages: 52500 - 52599 (< 60000)
-    commands: 52500 - 52599 (< 60000)
+    messages: 52620 - 52629 (< 60000)
+    commands: 52620 - 52629 (< 60000)
   -->
   <messages/>
 </mavlink>
