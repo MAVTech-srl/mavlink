@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<mavlink>
+  <include>development.xml</include>
+  <include>fts.xml</include>
+  <version>2</version>
+  <dialect>0</dialect>
+  <enums/>
+  <messages/>
+</mavlink>

@@ -77,6 +77,11 @@
     commands: 52600 - 52609
   -->
   <include>stemstudios.xml</include>
+  <!-- fts.xml range of IDs:
+    messages: 52610 - 52619
+    commands: 52610 - 52619
+  -->
+  <include>fts.xml</include>
   <!--Reserved range of IDs: https://github.com/dronecode/mavlink-military
     contact: @mrpollo and @hamishwillee on GitHub
     messages: 53000 - 53999
